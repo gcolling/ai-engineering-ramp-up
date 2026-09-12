@@ -2,21 +2,27 @@
 
 ## Program
 
-Duration: 16 weeks
+Duration: 9 weeks
+
 Expected workload: approximately 15 hours/week
+
 Typical study session: approximately 3 hours
 
 ## Current position
 
-Phase: 1 — Foundations
+Phase: 1 — AI Application Foundations
+
 Week: 1
-Day: 1
-Current module: LLM Application Foundations
+
+Day: 2
+
+Current module: Prompt and Context Engineering
 
 ## Time
 
 Target this week: approximately 15 hours
-Completed this week: approximately 3 hours
+
+Completed this week: approximately 6 hours
 
 ## Completed
 
@@ -26,11 +32,12 @@ Completed this week: approximately 3 hours
 - Local development environment setup
 - ChatGPT training workspace setup
 - Week 1 Day 1 — LLM application mental model
+- Week 1 Day 2 — Prompt and context engineering
+- Week 1 Day 2 — Prompt/context lab and HR assistant exercise
 
 ## Currently working on
 
-- Reviewing Week 1 Day 1 work
-- Beginning the transition from setup into regular AI engineering study
+- None
 
 ## Blocked
 
@@ -54,35 +61,37 @@ None
 - Responsibilities outside the LLM
 - AI-specific testing considerations
 
+### Prompt and context engineering
+
+- Context construction
+- Context minimization
+- Context management
+- Direct and indirect prompt injection
+- Untrusted content
+- Trust and authority boundaries
+- Deterministic application controls
+- Authentication and authorization outside the LLM
+- Context handling for retrieved documents and tool results
+
 ## Projects
 
 No portfolio projects started yet.
 
 ## Next
 
-Complete instructor review of Week 1 Day 1.
-
-Then continue Phase 1 — LLM Application Foundations with the next
-scheduled Week 1 task.
+Week 1 Day 3 — Structured Outputs and Validation
 
 ## Learning observations
 
-Day 1 established the initial mental model for treating LLMs as
-probabilistic components inside larger software systems rather than
-as standalone applications.
+Week 1 has established the mental model of LLMs as probabilistic
+components inside larger software systems.
 
-The main engineering focus going forward is to understand how
-application logic, context, validation, testing and external systems
-are used to make AI-based systems reliable.
+Day 2 added the application-level perspective: context must be
+engineered deliberately, untrusted content must not gain instruction
+authority, and deterministic security controls must remain outside
+the LLM.
 
 ## Git workflow
 
-Day 1 work was committed directly to `main` before the branch/PR
-workflow was established.
-
-From Day 2 onward, normal development work should use:
-
 branch → implementation → tests → commit → push → pull request →
 review → merge.
-
-Direct commits to `main` should generally be avoided.
