@@ -1,10 +1,10 @@
 # What changed?
 
-Describe the implementation.
+Describe the implementation and artifacts changed.
 
 # Why?
 
-What problem or learning objective does this address?
+What problem, requirement, or learning objective does this address?
 
 # How was it tested?
 
@@ -12,18 +12,6 @@ What problem or learning objective does this address?
 - [ ] Manual testing
 - [ ] Edge cases
 - [ ] Failure scenarios
-
-# What did I learn?
-
--
-
-# What am I uncertain about?
-
--
-
-# What would I improve next?
-
--
 
 # Related issue
 
