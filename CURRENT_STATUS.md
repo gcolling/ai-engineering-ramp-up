@@ -14,15 +14,15 @@ Phase: 1 — AI Application Foundations
 
 Week: 1
 
-Day: 2
+Day: 3
 
-Current module: Prompt and Context Engineering
+Current module: Structured Outputs and Validation
 
 ## Time
 
 Target this week: approximately 15 hours
 
-Completed this week: approximately 6 hours
+Completed this week: approximately 9 hours
 
 ## Completed
 
@@ -33,7 +33,7 @@ Completed this week: approximately 6 hours
 - ChatGPT training workspace setup
 - Week 1 Day 1 — LLM application mental model
 - Week 1 Day 2 — Prompt and context engineering
-- Week 1 Day 2 — Prompt/context lab and HR assistant exercise
+- Week 1 Day 3 — Structured outputs and validation
 
 ## Currently working on
 
@@ -73,23 +73,37 @@ None
 - Authentication and authorization outside the LLM
 - Context handling for retrieved documents and tool results
 
+### Structured outputs and validation
+
+- Structured output contracts
+- JSON parsing
+- Schema validation
+- Business validation
+- Validation failure classes
+- Cross-field business rules
+- Range and threshold validation
+- State-dependent validation
+- Human-review routing
+- Validated AI output as a workflow input
+
 ## Projects
 
 No portfolio projects started yet.
 
 ## Next
 
-Week 1 Day 3 — Structured Outputs and Validation
+Week 1 Day 4 — Tool and Function Calling Fundamentals
 
 ## Learning observations
 
-Week 1 has established the mental model of LLMs as probabilistic
-components inside larger software systems.
+Week 1 has established the core application boundary around an LLM:
 
-Day 2 added the application-level perspective: context must be
-engineered deliberately, untrusted content must not gain instruction
-authority, and deterministic security controls must remain outside
-the LLM.
+context is engineered before inference, and model output must be
+validated before it can influence application behavior.
+
+Day 3 added the distinction between structural validity and business
+validity, reinforcing that a structurally valid model response is not
+automatically a correct or safe application decision.
 
 ## Git workflow
 

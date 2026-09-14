@@ -7,7 +7,9 @@ authors = [
     { name = "Gabriel Colling", email = "colling.g2@gmail.com" }
 ]
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "pydantic>=2.13.5",
+]
 
 [project.scripts]
 ai-engineering-ramp-up = "ai_engineering_ramp_up:main"
