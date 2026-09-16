@@ -14,15 +14,15 @@ Phase: 1 — AI Application Foundations
 
 Week: 1
 
-Day: 3
+Day: 4
 
-Current module: Structured Outputs and Validation
+Current module: Tool and Function Calling Fundamentals
 
 ## Time
 
 Target this week: approximately 15 hours
 
-Completed this week: approximately 9 hours
+Completed this week: approximately 11 hours
 
 ## Completed
 
@@ -34,6 +34,7 @@ Completed this week: approximately 9 hours
 - Week 1 Day 1 — LLM application mental model
 - Week 1 Day 2 — Prompt and context engineering
 - Week 1 Day 3 — Structured outputs and validation
+- Week 1 Day 4 — Tool and function calling fundamentals
 
 ## Currently working on
 
@@ -86,26 +87,40 @@ None
 - Human-review routing
 - Validated AI output as a workflow input
 
+### Tool and function calling
+
+- Tool definitions
+- Tool schemas
+- Tool selection
+- Tool-call request validation
+- Tool authorization boundaries
+- Deterministic tool execution
+- Read-only vs. side-effecting tools
+- Tool descriptions
+- Mock LLM tool calls
+- Local LLM tool calling with Ollama
+- Separating provider-specific responses from the application tool layer
+
 ## Projects
 
 No portfolio projects started yet.
 
 ## Next
 
-Week 1 Day 4 — Tool and Function Calling Fundamentals
+Week 1 Day 5 — LLM Foundations Review and Reliability Exercise
 
 ## Learning observations
 
 Week 1 has established the core application boundary around an LLM:
 
-context is engineered before inference, and model output must be
-validated before it can influence application behavior.
+context is engineered before inference, model output must be validated
+before it can influence application behavior, and tool requests must
+pass through deterministic application controls before execution.
 
-Day 3 added the distinction between structural validity and business
-validity, reinforcing that a structurally valid model response is not
-automatically a correct or safe application decision.
+Day 4 added the tool boundary: the LLM proposes a tool call, while the
+application remains responsible for validation, authorization and
+execution.
 
 ## Git workflow
 
-branch → implementation → tests → commit → push → pull request →
-review → merge.
+branch → implementation → tests → commit → push → pull request → review → merge.
