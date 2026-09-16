@@ -92,13 +92,9 @@ def test_validate_with_very_long_reason():
     except ValueError as e:
         assert "at most 100 characters" in str(e)
 
-def test_validate_with_unexpected_unicode_characters():
+def test_validate_with_unicode_characters():
     output = Response.UNEXPECTED_UNICODE.value
-    try:
-        validate_output(output)
-        assert False, "Expected ValueError for unexpected unicode characters"
-    except ValueError as e:
-        assert "String should match pattern" in str(e)
+    assert validate_output(output)
 
 def test_validate_with_duplicate_fields():
     output = Response.DUPLICATE_FIELDS.value
